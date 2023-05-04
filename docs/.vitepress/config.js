@@ -23,7 +23,7 @@ export default defineConfig({
   title: 'vitepress',
   description: 'vitepress的使用',
   lang: 'cn-ZH',
-  base: '/',
+  base: '.',
   lastUpdated: true,
 
   themeConfig: {
