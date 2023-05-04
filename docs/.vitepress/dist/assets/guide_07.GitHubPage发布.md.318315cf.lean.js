@@ -1,0 +1,4 @@
+import{_ as a,D as l,o as p,c as e,G as o,z as s,a as c,O as t}from"./chunks/framework.65ef40b1.js";const v=JSON.parse('{"title":"Github Page 发布","description":"","frontmatter":{},"headers":[],"relativePath":"guide/07.GitHubPage发布.md","filePath":"guide/07.GitHubPage发布.md","lastUpdated":1683219944000}'),r={name:"guide/07.GitHubPage发布.md"},i=s("hr",null,null,-1),y=s("p",null,"layout: doc",-1),d=s("hr",null,null,-1),u=s("h1",{id:"github-page-发布",tabindex:"-1"},[s("code",null,"Github Page"),c(" 发布 "),s("a",{class:"header-anchor",href:"#github-page-发布","aria-label":'Permalink to "`Github Page` 发布"'},"​")],-1),A=s("br",null,null,-1),b=t("",10);function h(D,g,m,E,C,B){const n=l("el-alert");return p(),e("div",null,[i,y,d,u,A,o(n,{title:`作者：65岁退休Coder
+链接：https://juejin.cn/post/7164276166084263972
+来源：稀土掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。`,type:"info"}),b])}const f=a(r,[["render",h]]);export{v as __pageData,f as default};

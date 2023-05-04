@@ -1,0 +1,23 @@
+{
+  "name": "vitepress",
+  "version": "1.0.0",
+  "description": "手把手搭建vitepress文档",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs --port 9001 --host",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.75"
+  },
+  "dependencies": {
+    "@vitepress-demo-preview/component": "^2.3.0",
+    "@vitepress-demo-preview/plugin": "^1.1.9",
+    "directory-tree": "^3.5.1",
+    "element-plus": "^2.3.4"
+  }
+}
