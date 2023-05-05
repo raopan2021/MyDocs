@@ -1,21 +1,21 @@
 ---
 layout: home
 
-title: 搭建一个文档
-titleTemplate: 手把手哦，包教包会
+title: PanPan
+titleTemplate: panpan的前端小屋
 editLink: true
 lastUpdated: true
 hero:
-  name: 搭建一个文档
-  text: 手把手哦，包教包会
-  # tagline: 组件库副标题描述
-  # image:
-  #   src: /logo.png
-  #   alt: YYG Admin UI
+  name: 我的前端知识库
+  text: 从0开始的前端之路
+  tagline: 跟着我的脚步，由浅及深学习前端
+  image:
+    src: /panpan.jpg
+    alt: (⊙o⊙)帅哥
   actions:
     - theme: brand
       text: 快速开始
-      link: /guide/
+      link: /04-js深入/
     # - theme: alt
     #   text: 组件
     #   link: /components/
@@ -27,6 +27,6 @@ features:
     title: 进阶模块
     details: 自动生成目录、在md里面写vue组件。
   - icon: ✈️
-    title: 待定。
-    details: 待定。
+    title: 多练习，兄弟。
+    details: 我写这个文档，写的入迷，晚上8点写到凌晨2点，一点不困。甚至来了一发，不然对不起这个默认的飞机图标。
 ---

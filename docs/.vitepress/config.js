@@ -5,7 +5,8 @@ const path = require("path");
 
 // 顶部导航数据
 const nav = [
-  { text: '开始',link: '/guide/index' },
+  { text: 'js深入',link: '/04-js深入/index' },
+  { text: 'VitePress',link: '/09-VitePress/index' },
   // { text: '组件',link: '/components/basic-component1' },
   // 顶部导航下拉菜单按如下方式：
   // {
@@ -20,15 +21,15 @@ const nav = [
 
 export default defineConfig({
   // 页面标签页的title标题
-  title: 'vitepress',
-  description: 'vitepress的使用',
+  title: 'panpan',
+  description: 'panpan的前端知识',
   lang: 'cn-ZH',
-  base: '.',
+  base: '/',
   lastUpdated: true,
 
   themeConfig: {
     // logo: '/logo.png',
-    siteTitle: '搭建一个文档',
+    siteTitle: 'panpan的前端知识',
     outline: 2,
     socialLinks: [
       { icon: 'github',link: 'https://github.com/vuejs/vitepress' }
@@ -37,7 +38,8 @@ export default defineConfig({
     docFooter: { prev: '上一篇',next: '下一篇' },
     nav,
     sidebar: {
-      "/guide": autoGetSidebarOptionBySrcDir(path.resolve(__dirname,"../guide"),"开始"),
+      "/": autoGetSidebarOptionBySrcDir(path.resolve(__dirname,"../04-js深入"))
+        .concat(autoGetSidebarOptionBySrcDir(path.resolve(__dirname,"../09-VitePress"))),
     }
   },
 
