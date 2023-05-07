@@ -6,6 +6,7 @@ const path = require("path");
 // 顶部导航数据
 const nav = [
   { text: 'js深入',link: '/04-js深入/index' },
+  { text: 'js算法',link: '/04-js算法/index' },
   { text: 'VitePress',link: '/09-VitePress/index' },
   // { text: '组件',link: '/components/basic-component1' },
   // 顶部导航下拉菜单按如下方式：
@@ -39,6 +40,7 @@ export default defineConfig({
     nav,
     sidebar: {
       "/": autoGetSidebarOptionBySrcDir(path.resolve(__dirname,"../04-js深入"))
+        .concat(autoGetSidebarOptionBySrcDir(path.resolve(__dirname,"../05-js算法")))
         .concat(autoGetSidebarOptionBySrcDir(path.resolve(__dirname,"../09-VitePress"))),
     }
   },
