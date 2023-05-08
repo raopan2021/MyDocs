@@ -7,7 +7,8 @@
     "dev": "vitepress dev docs --port 9001 --host",
     "build": "vitepress build docs",
     "serve": "vitepress serve docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "./deploy.sh" 
   },
   "author": "",
   "license": "ISC",
