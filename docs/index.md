@@ -10,7 +10,7 @@ hero:
   text: 从0开始的前端之路
   tagline: 跟着我的脚步，由浅及深学习前端
   image:
-    src: /panpan.jpg
+    src: /public/panpan.jpg
     alt: (⊙o⊙)帅哥
   actions:
     - theme: brand

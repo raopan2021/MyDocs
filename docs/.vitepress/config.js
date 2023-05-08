@@ -25,7 +25,7 @@ export default defineConfig({
   title: 'panpan',
   description: 'panpan的前端知识',
   lang: 'cn-ZH',
-  base: '/',
+  base: '/MyDocs/',
   lastUpdated: true,
 
   themeConfig: {
