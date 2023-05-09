@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { componentPreview,containerPreview } from '@vitepress-demo-preview/plugin'
-import { autoGetSidebarOptionBySrcDir } from './autoSideBar'
+import { getSidebar } from './theme/autoSideBar'
 const path = require("path");
 
 // 顶部导航数据
@@ -29,7 +29,7 @@ export default defineConfig({
   lastUpdated: true,
 
   themeConfig: {
-    // logo: '/logo.png',
+    logo: '../public/panpan.jpg',
     siteTitle: 'panpan的前端知识',
     outline: 2,
     socialLinks: [
@@ -39,9 +39,9 @@ export default defineConfig({
     docFooter: { prev: '上一篇',next: '下一篇' },
     nav,
     sidebar: {
-      "/": autoGetSidebarOptionBySrcDir(path.resolve(__dirname,"../04-js深入"))
-        .concat(autoGetSidebarOptionBySrcDir(path.resolve(__dirname,"../05-js算法")))
-        .concat(autoGetSidebarOptionBySrcDir(path.resolve(__dirname,"../09-VitePress"))),
+      "/": getSidebar(path.resolve(__dirname,"../04-js深入"))
+        .concat(getSidebar(path.resolve(__dirname,"../05-js算法")))
+        .concat(getSidebar(path.resolve(__dirname,"../09-VitePress"))),
     }
   },
 

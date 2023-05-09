@@ -30,3 +30,9 @@ features:
     title: 多练习，兄弟。
     details: 我写这个文档，写的入迷，晚上8点写到凌晨2点，一点不困
 ---
+
+<script setup>
+import PowerTort from './demos/PowerTort.vue'
+</script>
+
+<power-tort />
