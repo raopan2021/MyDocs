@@ -24,12 +24,14 @@ export default defineConfig({
   // 页面标签页的title标题
   title: 'panpan',
   description: 'panpan的前端知识',
+  head: [
+    ['link',{ rel: 'icon',href: '/panpan.jpg' }]
+  ],
   lang: 'cn-ZH',
   base: '/MyDocs/',
   lastUpdated: true,
-
   themeConfig: {
-    logo: '../public/panpan.jpg',
+    logo: '/panpan.jpg',
     siteTitle: 'panpan的前端知识',
     outline: 2,
     socialLinks: [
