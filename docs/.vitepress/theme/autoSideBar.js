@@ -31,16 +31,20 @@ function getSidebar (srcPath,title) {
   })
   srcDir.children.unshift(firstIndexMD);
 
-  return [
+  let res = [
     {
       // 如果传入了新的标题，则使用传入的新标题
       text: title == undefined ? srcDir.name : title,
-      // 默认展开
+      // 显示折叠按钮
       collapsible: true,
-      collapsed: true,
+      // 折叠？
+      collapsed: false,
       items: toSidebarOption(srcDir.children),
     },
   ];
+  console.log(JSON.stringify(res));
+
+  return res
 }
 
 function toSidebarOption (tree = []) {

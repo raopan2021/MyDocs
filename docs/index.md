@@ -15,7 +15,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /04-js深入/
+      link: /guide/VitePress/
     # - theme: alt
     #   text: 组件
     #   link: /components/
