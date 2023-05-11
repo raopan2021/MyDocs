@@ -6,15 +6,15 @@ titleTemplate: panpan的前端小屋
 editLink: true
 lastUpdated: true
 hero:
-  name: 我的前端知识库
-  text: 从0开始的前端之路
-  tagline: 跟着我的脚步，由浅及深学习前端
+  name: 前端知识
+  # text: 从0开始的前端之路
+  # tagline: 跟着我的脚步，由浅及深学习前端
   image:
-    src: /panpan.jpg
-    alt: (⊙o⊙)帅哥
+    src: /黄昏.svg
+    alt: go
   actions:
     - theme: brand
-      text: 快速开始
+      text: 快速开始-VitePress
       link: /guide/VitePress/
     # - theme: alt
     #   text: 组件

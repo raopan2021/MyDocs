@@ -18,9 +18,14 @@
   --vp-button-brand-hover-bg: #D939CD;
 
   --vp-button-brand-active-border: #F6CEEC;
+
+  /* css变量 */
+  --bgColor: linear-gradient(#496eaa, #944fa8, #a8804f, #944fa8, #496eaa);
+
+  --component-preview-primary-color: var(--bgColor);
 }
 
-/* // 美化滚动条 */
+/* 美化滚动条 */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -47,4 +52,44 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(87, 125, 202, 0.3);
+}
+
+/* 左侧目录-active--变颜色 */
+.is-active>.item>.link>.text,
+/* doc主体部分 */
+.content {
+  background-color: var(--bgColor);
+  animation: colorChange 20s infinite alternate;
+}
+
+.is-active>.item>.link>.text {
+  color: transparent;
+}
+
+@keyframes colorChange {
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* 给 h1 h2 设置mask，配合变化的背景，来修改字体颜色 */
+h1,
+h2,
+.outline-link.active {
+  position: relative;
+  color: #496eaa;
+}
+
+h1:before,
+h2:before,
+.outline-link.active:before {
+  content: attr(text);
+  position: absolute;
+  z-index: 10;
+  -webkit-mask:var(--bgColor);
+  mask: var(--bgColor);
+  animation: colorChange 20s infinite alternate;
 }

@@ -10,7 +10,7 @@ export default defineConfig({
   description: 'panpan的前端知识',
   head: [
     // 浏览器标签页的ico
-    ['link',{ rel: 'icon',href: '/panpan.jpg' }], // 推荐使用ico图标，丢到 docs/public文件夹
+    ['link',{ rel: 'icon',href: '/logo.svg' }], // 推荐使用ico图标，丢到 docs/public文件夹
     // 配置后会显示在页面中的 `head` 中。可以配置多个。应该也能扩展 `VitePress` 的功能，有兴趣的可以研究下。
     ['meta',{ name: 'keywords',content: 'HTML, CSS, JavaScript, VitePress' }]
   ],
@@ -22,7 +22,7 @@ export default defineConfig({
   // 定制更新时间的提示文字。
   lastUpdatedText: "最近更新时间",
   themeConfig: {
-    logo: '/panpan.jpg', // nav栏最左侧标题的logo
+    logo: '/logo.svg', // nav栏最左侧标题的logo
     siteTitle: 'panpan的前端知识',
     outline: [2,6],
     socialLinks: [
