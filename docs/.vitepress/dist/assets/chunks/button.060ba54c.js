@@ -1,0 +1,1 @@
+import{_ as e,G as o,o as n,A as a,B as c,a as r}from"./framework.d320c377.js";const s={};function _(p,f){const t=o("el-button");return n(),a(t,{type:"primary"},{default:c(()=>[r("测试按钮")]),_:1})}const u=e(s,[["render",_]]);export{u as default};

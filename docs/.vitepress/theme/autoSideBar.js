@@ -42,7 +42,7 @@ function getSidebar (srcPath,title) {
       items: toSidebarOption(srcDir.children),
     },
   ];
-  console.log(JSON.stringify(res));
+  // console.log(JSON.stringify(res));
 
   return res
 }
