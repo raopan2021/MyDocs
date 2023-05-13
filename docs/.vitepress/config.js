@@ -48,10 +48,10 @@ export default defineConfig({
     },
     // 上下翻页(默认提供),通过配置来定制默认的文字。
     docFooter: { prev: '上一篇',next: '下一篇' },
-    footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023 by pan'
-    },
+    // footer: {
+    //   message: 'Released under the MIT License.',
+    //   copyright: 'Copyright © 2023 by pan'
+    // },
     // 在 `Github` 编辑此页
     editLink: {
       // `pattern`：可以分为两部分，`:path` 为变量内容指当前的文件名称。`:path` 之前的部分则是项目的 `/docs` 的 `github` 的文档地址。

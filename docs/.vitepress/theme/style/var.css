@@ -20,8 +20,10 @@
   --vp-button-brand-active-border: #F6CEEC;
 
   /* css变量 */
-  --darkBgColor: linear-gradient(45deg,#496eaa, #944fa8, #a8804f, #944fa8, #496eaa);
-  --lightBgColor: linear-gradient(45deg,#c64846,  #71cdc8);
+  /* 深色背景 */
+  --darkBgColor: linear-gradient(45deg, #496eaa, #944fa8, #a8804f, #944fa8, #496eaa);
+  /* 浅色背景 */
+  --lightBgColor: linear-gradient(45deg, #c64846,  #71cdc8);
 
   --component-preview-primary-color: var(--darkBgColor);
 }
@@ -60,18 +62,21 @@
 /* doc主体部分 */
 .content {
   background-color: var(--darkBgColor);
-  animation: colorChange 20s infinite alternate;
+  animation: colorChange 30s infinite alternate;
 }
 
+/* 左侧目录文字透明 */
 .is-active>.item>.link>.text {
   color: transparent;
 }
 
 @keyframes colorChange {
   from {
+    /* 神奇的色调旋转滤镜hue-rotate */
     filter: hue-rotate(0);
   }
   to {
+    /* 120.0度的旋转将准确地将红色映射为绿色，绿色映射为蓝色，蓝色映射为红色。 */
     filter: hue-rotate(360deg);
   }
 }
@@ -95,6 +100,7 @@ h2:before,
   animation: colorChange 20s infinite alternate;
 }
 
+/* 首页，增加背景-渐变-加色调旋转滤镜 */
 .is-home{
   position: relative;
   height: 100%;
@@ -102,12 +108,15 @@ h2:before,
   animation: colorChange 15s infinite alternate;
 }
 
+/* dark深色模式-换背景图 */
 .dark>body>#app>.Layout>.is-home{
   background: url(/background.jpg);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  filter: blur(2rem);
 }
 
+/* after添加模糊滤镜 */
 .dark>body>#app>.Layout>.is-home::after{
   position: absolute;
   top: 0;
@@ -118,9 +127,9 @@ h2:before,
   background: inherit;
   z-index: -1;
   filter: blur(2rem);
-  /* transform: ; */
 }
 
+/* 首页的feature，改为透明背景，避免light模式下黑色难看 */
 .VPFeature{
   background-color: transparent !important;
   border: 1px solid rgba(255, 128, 128, 0.879);
