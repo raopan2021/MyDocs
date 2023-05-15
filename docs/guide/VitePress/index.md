@@ -4,8 +4,6 @@ layout: doc
 
 # 从0开始的`vitepress`之旅
 
-
-
 ::: warning
 你最好会一点`vue`和`vite`的基本知识点！当然不会也不影响
 
@@ -14,8 +12,6 @@ layout: doc
 :::
 
 `VitePress `是 [VuePress](https://vuepress.vuejs.org/) 小兄弟, 基于 [Vite](https://github.com/vitejs/vite)构建。
-
-
 
 ## 优点
 
@@ -28,8 +24,6 @@ layout: doc
 右侧文档目录、锚点
 
 在`markdown`文件里面轻松使用`vue`代码（前提是你会`vue`）
-
-
 
 ## 缺点
 
